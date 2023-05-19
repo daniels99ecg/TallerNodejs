@@ -32,18 +32,45 @@ use('sample_airbnb');
 
  // Unir las collection
 
- db.PubligrafitNode.aggregate([
+//  db.PubligrafitNode.aggregate([
+//    {
+//       $lookup: {
+//         from: "PubligrafitNodePerson",
+//         localField: "'id'",
+//         foreignField: "'idPerson'",
+//         as: "ComentariosPersonas"
+//       }
+//    },
+//    {
+//       $project: {
+//          firstName:true, ComentariosPersonas:true
+//       }
+//    }
+//  ])
+
+//unwind
+// db.PubligrafitNodeArray.aggregate( [ 
+//    { $unwind : "$sizes" } 
+// ] )
+
+db.PubligrafitNode.aggregate([
    {
       $lookup: {
-        from: "PubligrafitNodePerson",
-        localField: "'id'",
-        foreignField: "'idPerson'",
-        as: "ComentariosPersonas"
+        from: "rol",
+        localField: "'_id'",
+        foreignField: "'id_rol'",
+        as: "asignacion"
       }
    },
    {
       $project: {
-         firstName:true, ComentariosPersonas:true
+         "_id":false,
+         "firstName": true,
+         "lastName":true, 
+         "age": true,
+         "address":true ,
+         asignacion:true
       }
    }
- ])
+])
+
