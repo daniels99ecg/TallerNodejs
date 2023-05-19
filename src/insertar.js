@@ -13,7 +13,7 @@ async function crearPropiedad(nuevaPropiedad){
     try {
         await client.connect();
 
-        const result=await client.db('sample_airbnb').collection('PubligrafitNodePerson').insertMany(nuevaPropiedad);
+        const result=await client.db('sample_airbnb').collection('PubligrafitNodeArray').insertMany(nuevaPropiedad);
 
         console.log(`El resultado de es ${result.insertId}`);
 
@@ -24,89 +24,101 @@ async function crearPropiedad(nuevaPropiedad){
     }
 }
 
-
-for(let i=0; i<100;i++){
-
 crearPropiedad([
     {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-},
-{
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-},    {
-    "firstName":faker.person.firstName(),
-    "lastName":faker.person.lastName(),
-    "age": faker.number.int({min:1, max:80}),
-    "address":faker.location.direction(),
-    "idPerson":faker.number.int({min:1, max:2000})
-
-}
+            "firstName":faker.person.firstName(),
+            "lastName":faker.person.lastName(),
+            "age": faker.number.int({min:1, max:80}),
+            "address":faker.location.direction(),
+            "idPerson":faker.number.int({min:1, max:2000}),
+            "sizes":["Daniel", "Emilio", "Cruz", "Garcia"]
+        }
 ])
-}
+
+
+
+// for(let i=0; i<100;i++){
+
+// crearPropiedad([
+//     {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+// },
+// {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// },    {
+//     "firstName":faker.person.firstName(),
+//     "lastName":faker.person.lastName(),
+//     "age": faker.number.int({min:1, max:80}),
+//     "address":faker.location.direction(),
+//     "idPerson":faker.number.int({min:1, max:2000})
+
+// }
+// ])
+// 
  
 
 
