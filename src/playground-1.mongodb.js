@@ -53,24 +53,24 @@ use('sample_airbnb');
 //    { $unwind : "$sizes" } 
 // ] )
 
-db.PubligrafitNode.aggregate([
-   {
-      $lookup: {
-        from: "rol",
-        localField: "'_id'",
-        foreignField: "'id_rol'",
-        as: "asignacion"
-      }
-   },
-   {
-      $project: {
-         "_id":false,
-         "firstName": true,
-         "lastName":true, 
-         "age": true,
-         "address":true ,
-         asignacion:true
-      }
-   }
-])
+// db.PubligrafitNode.aggregate([
+//    {
+//       $lookup: {
+//         from: "rol",
+//         localField: "'_id'",
+//         foreignField: "'id_rol'",
+//         as: "asignacion"
+//       }
+//    },
+//    {
+//       $project: {
+//          "_id":false,
+//          "firstName": true,
+//          "lastName":true, 
+//          "age": true,
+//          "address":true ,
+//          asignacion:true
+//       }
+//    }
+// ])
 
