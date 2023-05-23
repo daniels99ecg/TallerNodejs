@@ -1,3 +1,6 @@
+//Pruebas de uso de la herramienta faker 
+
+
 const {faker}= require('@faker-js/faker');
 
 const firstName=faker.person.firstName();
