@@ -28,173 +28,94 @@ async function crearPropiedad(nuevaPropiedad){ // Se crea una funcion asincronic
 
 //Insertar los datos de la colleccion de Rol
 //Hacer el recodido del objeto 100 veces para insertar los datos
-for(let i=0; i<100; i++){ 
-crearPropiedad([
-
-    {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000}) // // esta es la llave foranea de los roles
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },  {
-        "nameRol": faker.person.prefix(),
-        "fecha":faker.date.anytime(),
-        "descripcion":faker.lorem.text(),
-        "id_rol":faker.number.int({min:1, max:2000})
-
-    },
-])
-}
-
-
-//Insertar los datos de la coleccion de PubligrafitNodeArray
-
-// crearPropiedad([
-//     {
-//             "firstName":faker.person.firstName(),
-//             "lastName":faker.person.lastName(),
-//             "age": faker.number.int({min:1, max:80}),
-//             "address":faker.location.direction(),
-//             "idPerson":faker.number.int({min:1, max:2000}),
-//             "sizes":["Daniel", "Emilio", "Cruz", "Garcia"]
-//         }
-// ])
 
 
 //Insertar los datos de la coleccion PubligrafitNode
 
 
-// for(let i=0; i<100;i++){
+for(let i=0; i<100;i++){
 
-// crearPropiedad([
-//     {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//    
-// },
-// {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//  
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//   
+crearPropiedad([
+    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+   
+},
+{
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+ 
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+  
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//     
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+    
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//    
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+   
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//   
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+  
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//    
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+   
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//   
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+  
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//    
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+   
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//    
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+   
 
-// },    {
-//     "firstName":faker.person.firstName(),
-//     "lastName":faker.person.lastName(),
-//     "age": faker.number.int({min:1, max:80}),
-//     "address":faker.location.direction()
-//     
+},    {
+    "firstName":faker.person.firstName(),
+    "lastName":faker.person.lastName(),
+    "age": faker.number.int({min:1, max:80}),
+    "address":faker.location.direction()
+    
 
-// }
-// ])
-// 
+}
+])
+}
+
  
 
 

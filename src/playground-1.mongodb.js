@@ -30,6 +30,46 @@ use('sample_airbnb');
 //     }
 //  } )
 
+//Validacion para los roles
+// db.createCollection("rol", {
+//     validator: {
+//        $jsonSchema: {
+          
+//           required: [ "nameRol", "fecha", "descripcion", "id_rol" ],
+//           properties: {
+//              nameRol: {
+//                 bsonType: "string",
+//                 description: "'firstName' Es un campo requerido"
+//              },
+//              fecha: {
+//                 bsonType: "date",
+//                 description: "'lastName' Es un campo requerido"
+//              },
+//              description: {
+//                 bsonType: "string",
+//                 description: "'age' Es un campo requerido"
+//              },
+//              address:{
+//                 bsonType: "int",
+//                 minimum:1,
+//                 maxmanum:2000,
+//                 description: "'address' Es un campo requerido"
+//              }
+//           }
+//        }
+//     }
+//  } )
+
+
+
+
+
+
+
+
+
+
+
  // Unir las collection
 
 //  db.PubligrafitNode.aggregate([
@@ -49,6 +89,8 @@ use('sample_airbnb');
 //  ])
 
 //unwind
+
+
 // db.PubligrafitNodeArray.aggregate( [ 
 //    { $unwind : "$sizes" } 
 // ] )
@@ -78,20 +120,20 @@ use('sample_airbnb');
 //Pipeline
 
 
-db.PubligrafitNode.aggregate([
-   {
-      $match: {
-        age:{$eq:22}
-      }
-   },
-   {
-      $project: {
-        "firstName":true,
-        "age":true
-      }
-   },
-   {
-      $limit: 5
-   }
-])
+// db.PubligrafitNode.aggregate([
+//    {
+//       $match: {
+//         age:{$eq:22}
+//       }
+//    },
+//    {
+//       $project: {
+//         "firstName":true,
+//         "age":true
+//       }
+//    },
+//    {
+//       $limit: 5
+//    }
+// ])
 
