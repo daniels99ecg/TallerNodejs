@@ -5,7 +5,7 @@ const {faker}= require('@faker-js/faker');// Se establece la conexion con la dep
 // Se ingresa la uri del mongo atlas a la constante de (uri) para establecer la conexion
 
 const uri='mongodb+srv://decruz82:admin@cluster0.bmv0nsj.mongodb.net/?retryWrites=true&w=majority';
-
+//Pruebas
 
 // async function actualizarPropiedad(nombrePropiedad, campoActualizar){// Se crea una funcion asincronica con un paso de parametros donde se ingresaran los datos
 //         const client = new MongoClient(uri); // Se instancia en una variable el MongoClient con la uri 
